@@ -1,0 +1,107 @@
+
+title {
+  display: none;
+  font-style: oblique;
+  font-size:  60;
+
+}
+
+link {
+  display: none;
+}
+
+body {
+  font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.right {
+  text-align:  right;
+}
+
+.topbar {
+  color: 33CAFF;
+}
+
+/* Add a black background color to the top navigation */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #008CBA;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+.dishes-container {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 5px 70px 5px 20px;
+  background: transparent;
+  height: 100%;
+  border-radius:15px;
+}
+
+.overlay {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.hover-image:hover .overlay {
+  opacity: 1;
+}
+
+.dishes-scroll {
+  display:inline-block;
+} 
+
+.dishes-scroll img {
+  margin-left: 10px;
+  width: 150px;
+  height: 150px;
+}
+
+.dishes-scroll img:hover{
+  opacity: 0.5;
+}
+
+#dininghall {
+  text-align: center;
+  font-size: 15px;
+  color: #003373;
+}
+
+.rating {
+  text-align: center;
+  margin-bottom: 15px;
+}
